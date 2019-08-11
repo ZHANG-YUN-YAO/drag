@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="./js/drag2.js"></script>
+</head>
+<body>
+  <ul class="drag-box">
+ 
+  </ul>
+</body>
+</html>
+<style type="text/css">
+  div{
+   height: 200px;
+   overflow-y: auto;
+  }
+  ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
+   display: inline-block;
+  }
+  .drag-item{
+   width: 100px;
+   padding: 0 10px;
+   line-height: 38px;
+   cursor: move;
+  }
+  .draging{
+   background-color: #ccc !important;
+  }
+  .no-draging{
+   background-color: #fff !important;
+  }
+</style>
+
+<script type="text/javascript">
+  new Drag({
+    container: '.drag-box',
+    data: ['应用1','应用2','应用3','应用4','应用5','应用6','应用7','应用8','应用9']
+  });
+</script>
